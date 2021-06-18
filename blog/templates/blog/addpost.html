@@ -1,0 +1,35 @@
+
+
+{% extends 'blog/base.html' %}
+{% load static %}
+
+{% block title %}
+Login
+{% endblock title %}
+{% block css_style %}
+<!-- <link rel="stylesheet" href="{% static 'blog/css/addpost.css' %}"> -->
+<link rel="stylesheet" href="{% static 'blog/css/home.css' %}">
+{%  endblock %}
+{% block content %}
+    
+    <div class="col-sm-10 blog1 ">
+    <h2 class="display-8 ">Add Post</h2>
+    <form class="form-group" action="" method="POST" novalidate >
+    {% csrf_token %}
+   
+    {% for fm in form  %}
+    <div class="fm1">
+    {{fm.label_tag}}</div> 
+    <small class="fm2">
+    {{fm}}
+</small>
+                 <small class="text-warning">
+        {{fm.errors }}
+        </small>
+  {% endfor %}
+  <button class="btn btn-success my-4">Add Post</button>
+ <a class="btn btn-danger" href="{% url 'dashboard' %}">Cancel</a> 
+
+    </form>
+        </div>
+{% endblock content %}

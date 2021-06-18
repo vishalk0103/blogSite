@@ -1,0 +1,24 @@
+.blog1{
+    margin-top: 0;
+    margin-left: 200px;
+    width: 60%;
+    color: white;
+}
+.lead{
+    padding-right: 15px;
+    margin-left: -15px;
+}
+.jumbotron-fluid{
+    background-color: rgb(75, 74, 74);
+    
+}
+/* .jumbotron-fluid h1{
+    font-weight: bold;
+} */
+.container{
+    margin-top: -20px;
+}
+
+.lead2{
+    margin-top: -10px;
+}

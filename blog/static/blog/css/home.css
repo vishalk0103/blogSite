@@ -1,0 +1,22 @@
+.blog1{
+    width: 60%;
+    color: white;
+    align-items: center;
+}
+.lead{
+    padding-right: 15px;
+}
+.jumbotron-fluid{
+    background-color: rgb(105, 105, 105);
+    
+}
+.jumbotron-fluid h1{
+    font-weight: bold;
+}
+.btn-danger{
+    text-decoration: none;
+}
+.addpost{
+    position: relative;
+    top: 200px;
+}

@@ -1,0 +1,18 @@
+.blog1{
+    position: relative;
+    display: block;
+    left: 25%;
+    margin: 50px
+}
+.fm1{
+    display: block;
+}
+.fm2{
+    display: block;
+}
+.fm1 input{
+    width: 500px;
+}
+.form-group input{
+    width: 300px;
+}

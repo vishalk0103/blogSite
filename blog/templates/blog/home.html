@@ -1,0 +1,30 @@
+{% extends 'blog/base.html' %}
+{% load static %}
+
+{% block title %}Home{% endblock title %}
+{% block homeactive %} active {% endblock homeactive %}
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+{% block css_style %}
+<link rel="stylesheet" href="{% static 'blog/css/home.css' %}">
+{% endblock css_style %}
+{% block content %}
+<div class="col-sm-12 d-flex flex-column blog1">
+        {% for message in messages %}
+               <h5 class="alert alert-success text-center text-red" >
+        {{message}}
+        </h5>
+        {% endfor %}
+
+<h2 class='text-white my-5'>Home Page</h2>
+{% for post in posts  %}
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4 ">{{post.title}}</h1>
+    <p class="lead">
+    {{post.desc}}
+    </p>
+  </div>
+</div>
+{% endfor %}
+</div>
+{% endblock content %}
